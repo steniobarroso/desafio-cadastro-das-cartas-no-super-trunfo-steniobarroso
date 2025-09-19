@@ -53,16 +53,19 @@ int main() {
     printf("Número de Pontos Turísticos: ");
     scanf("%i",&pontos_turisticos_carta_2);
 
-
     nome_cidade_carta_1[strcspn(nome_cidade_carta_1, "\n")] = '\0';
     printf("\n----Carta1: \n");
     printf("Estado: %s\nCódigo: %s\nNome da cidade: %s\nPopulação: %i\n",estado_carta_1,codigo_carta_1,nome_cidade_carta_1,populacao_carta_1);
     printf("Área: %f\nPIB: %f\nNúmero de Pontos Turísticos:%i\n",area_carta_1,pib_carta_1,pontos_turisticos_carta_1);
+    printf("Densidade populacional: %f\n",populacao_carta_1/area_carta_1);
+    printf("PIB per Capita: %f\n",pib_carta_1/populacao_carta_1);
 
     nome_cidade_carta_2[strcspn(nome_cidade_carta_2, "\n")] = '\0';
     printf("\n----Carta2: \n");
     printf("Estado: %s\nCódigo: %s\nNome da cidade: %s\nPopulação: %i\n",estado_carta_2,codigo_carta_2,nome_cidade_carta_2,populacao_carta_2);
-    printf("Área: %f\nPIB: %f\nNúmero de Pontos Turísticos:%i\n\n",area_carta_2,pib_carta_2,pontos_turisticos_carta_2);
+    printf("Área: %f\nPIB: %f\nNúmero de Pontos Turísticos:%i\n",area_carta_2,pib_carta_2,pontos_turisticos_carta_2);
+    printf("Densidade populacional: %f\n",populacao_carta_1/area_carta_2);
+    printf("PIB per Capita: %f\n",pib_carta_2/populacao_carta_2);
     
 
 
